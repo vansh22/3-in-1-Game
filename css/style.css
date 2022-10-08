@@ -1,0 +1,76 @@
+.container-1, .container-2, .container-3, .container-4 {
+    width: 75%;
+    margin: 10px auto; 
+    /* using width and margin auto to decrease the size of container and also to make it center */
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+.flexbox-container-1 {
+    display: flex;
+    flex-flow: row wrap; 
+    /* instead of going out of the flexbox the items will go below cuz of wrapping property */
+    border: 2px solid forestgreen;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+.flexbox-container-1 div {
+    padding: 10px;
+    border: 2px solid forestgreen;
+    border-radius: 6px;
+    margin: 5px auto;
+}
+
+.container-2 #generate-cat{
+    border: 1px solid gray;
+    margin: 6px 0px;
+}
+
+.container-2 #generate-cat button{
+    display: block;
+    width: auto;
+    margin: 2px auto;
+}
+
+#flexbox-result-2, #flexbox-rps, #flexbox-btn-color{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#flexbox-result-2 img{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 2px 2px 16px black;
+    border-radius: 5px;
+}
+
+#flexbox-rps img{
+    border-radius: 60px;
+    margin: 15px;
+}
+
+#flexbox-rps img:hover{
+    /* box-shadow: 0px 1px 16px rgb(73, 209, 73, 1); */
+    box-shadow: 0px 1px 16px rgb(5, 172, 238);
+}
+
+.change-btn-color{
+    padding: 10px;
+    margin: 5px;
+}
+
+.change-btn-color select, button{
+    margin: 5px;
+}
+
+/* Utility classes */
+.center{
+    text-align: center;
+}
+.container-heading{
+    padding: 5px;
+}

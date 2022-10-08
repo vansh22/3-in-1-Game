@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementing JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- using bootstrap class -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="container-1">
+        <h2 class="center container-heading">Your age in days</h2>
+        <div class="flexbox-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="resetContent()">Reset</button>
+            </div>
+        </div>
+        <div class="flexbox-container-1">
+            <div id="flexbox-result-1"></div>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <h2 class="center container-heading">Cat Generator</h2>
+        <div id="generate-cat">
+            <button class="btn btn-success" onclick="generateCat()">Generate Cat</button>
+        </div>
+        <div class="flexbox-container-2">
+            <div id="flexbox-result-2"></div>
+        </div>
+    </div>
+
+    <div class="container-3">
+        <h2 class="center container-heading shadow-lg p-3 mb-5 bg-body rounded">Rock, Paper, Scissors</h2>
+        <div id="flexbox-rps">
+            <img id="rock" src="images/img-3.png" width="175px" height="175px" alt="" onclick="rpsGame(this)">
+            <!-- In an event, this refers to the element that received the event. -->
+            <img id="paper" src="images/img-4.png" width="175px" height="175px" alt="" onclick="rpsGame(this)">
+            <img id="scissors" src="images/img-2.png" width="175px" height="175px" alt="" onclick="rpsGame(this)">
+        </div>
+    </div>
+
+    <!-- <div class="container-4">
+        <h2 class="center container-heading">Change the Color of All Buttons!</h2>
+        <div id="flexbox-btn-color" class="change-btn-color">
+            <form action="">
+                <select name="color-pick" id="color-pick" onchange="buttonColorChange(this)">
+                    <option value="Random">Random</option>
+                    <option value="Red">Red</option>
+                    <option value="Green">Green</option>
+                    <option value="Blue">Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning">Google!</button>
+            <button class="btn btn-success">Facebook!</button>
+        </div>
+    </div>
+
+    <div class="container-5">
+        <h2 class="center container-heading">Blackjack Game</h2>
+        <h3 class="center container-heading">Let's Play!</h3>
+        <div class="flex-blackjack-row-1">
+            <div class="yourSection">
+                <h4>You: 0</h4>
+            </div>
+            <div class="dealerSection">
+                <h4>Dealer: 0</h4>
+            </div>
+        </div>
+        <div class="flex-blackjack-row-2">
+            <button class="btn btn-primary" id="blackjack-hit-button">Hit</button>
+            <button class="btn btn-warning" id="blackjack-stand-button">Stand</button>
+            <button class="btn btn-danger" id="blackjack-deal-button">Deal</button>
+        </div>
+    </div> -->
+</body>
+
+</html>
